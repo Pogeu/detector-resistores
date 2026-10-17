@@ -370,6 +370,8 @@ Com MATLAB e Image Processing Toolbox instalados, o harness usa as funções nat
 
 ## 12. Referências principais
 
+Os PDFs locais usados como base foram organizados em references/papers/. O índice dessa pasta descreve a contribuição de cada documento e separa papers locais de referências disponíveis apenas online.
+
 - Caoile, C. K. L. Automatic Resistor Value Detection Using Computer Vision and Machine Learning. Journal of Engineering and Technology for Sustainability and Resilience, vol. 1, n. 1, 2026. DOI: 10.5281/zenodo.20699559.
 - MATLAB File Exchange. Resistor Color Code Value Detector From Image.
 - bytesizedengineering. automatic-component-analyzer.

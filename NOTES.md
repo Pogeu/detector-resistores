@@ -23,7 +23,7 @@ https://universe.roboflow.com/ned-university-of-engineering-and-technology-5f8dq
 
 https://github.com/nichyjt/ResistorPrediction
 
-C:\Users\pedro\OneDrive - cefet-rj.br\Documentos\Faculdade\processamento de sinais 2\detector-resistores\JETSUR_01_01_009_(C.K.L. Caoile).pdf
+references/papers/JETSUR_01_01_009_(C.K.L. Caoile).pdf
 
 
 ## Fontes adicionais pesquisadas — 2026-09-20

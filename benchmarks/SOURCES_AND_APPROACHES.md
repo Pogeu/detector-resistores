@@ -24,7 +24,7 @@ As abordagens principais foram implementadas e comparadas. Ainda nao foi feita a
 
 Fonte: <https://zenodo.org/records/20699559>
 
-Arquivo local: `JETSUR_01_01_009_(C.K.L. Caoile).pdf` e `data/sources/zenodo/Caoile-paper.pdf`.
+Arquivo local: `references/papers/JETSUR_01_01_009_(C.K.L. Caoile).pdf` e `data/sources/zenodo/Caoile-paper.pdf`.
 
 **O que a fonte propoe**
 
