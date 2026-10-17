@@ -1,0 +1,44 @@
+{
+  "protocol_version": "1.0",
+  "strategies": [
+    "classical-4",
+    "classical-5",
+    "crop-classical-4",
+    "crop-classical-5",
+    "classical-lab-pca",
+    "cnn-crop",
+    "detector-only",
+    "detector-cnn",
+    "segmentation-rule",
+    "hybrid-4",
+    "hybrid-5",
+    "hybrid-auto",
+    "hybrid-video"
+  ],
+  "factors": {
+    "band_count": [4, 5, 6],
+    "background": ["light", "dark", "pcb", "cluttered"],
+    "lighting": ["uniform", "shadow", "specular", "underexposed", "overexposed"],
+    "orientation": ["horizontal", "vertical", "rotated", "perspective"],
+    "quality": ["sharp", "blur", "low_resolution", "compressed"],
+    "scene": ["single", "multiple", "partial_occlusion"],
+    "media": ["image", "video_static", "video_motion"]
+  },
+  "required_reports": [
+    "overall",
+    "by_strategy",
+    "by_band_count",
+    "by_lighting",
+    "by_orientation",
+    "by_media",
+    "by_source_dataset"
+  ],
+  "primary_metric": "value.sample_exact",
+  "secondary_metrics": [
+    "objects.f1",
+    "bands.slot_accuracy",
+    "value.nominal_exact",
+    "video.temporal_consistency",
+    "performance.latency_ms_p95"
+  ]
+}

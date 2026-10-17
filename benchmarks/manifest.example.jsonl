@@ -1,0 +1,2 @@
+{"id":"image-001","path":"data/images/image-001.jpg","media_type":"image","objects":[{"bbox":[10,20,120,35],"bands":["brown","black","red","gold"],"ohms":1000,"tolerance_percent":5}]}
+{"id":"video-001-frame-0001","source_id":"video-001","path":"data/videos/video-001.mp4","media_type":"video","frame":1,"objects":[{"bbox":[30,45,150,42],"bands":["yellow","violet","brown","gold"],"ohms":470,"tolerance_percent":5,"track_id":"resistor-1"}]}
