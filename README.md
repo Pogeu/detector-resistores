@@ -10,6 +10,14 @@ Os relatórios detalhados de benchmark ficam em [benchmarks/EXECUTION_REPORT.md]
 
 ## Estado atual
 
+## Exemplo de detecção em imagem real
+
+A imagem abaixo mostra a última saída anotada do modo especializado para fita. O sistema detectou 14 resistores e identificou 470 ohms em 14 de 14 componentes.
+
+![Última detecção de resistores em fita](docs/assets/last_detection_470ohm.jpg)
+
+Resultado registrado: contagem 14/14 e leitura 470 ohms em 14/14.
+
 Este primeiro MVP já fornece:
 
 - detecção de objetos candidatos por contornos usando OpenCV;
