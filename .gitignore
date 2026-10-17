@@ -17,3 +17,5 @@ data/inputs/
 runs/
 outputs/
 .env
+# The hosted Site has its own source repository and deployment manifest.
+site/
