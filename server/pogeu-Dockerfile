@@ -1,0 +1,7 @@
+FROM nginx:alpine
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY assets /usr/share/nginx/pogeu-sites/assets
+COPY pogeu /usr/share/nginx/pogeu-sites/pogeu
+COPY docs /usr/share/nginx/pogeu-sites/docs
+COPY resistor-lens /usr/share/nginx/pogeu-sites/resistor-lens

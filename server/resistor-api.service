@@ -1,0 +1,18 @@
+[Unit]
+Description=Resistor Lens GPU API
+After=network-online.target
+
+[Service]
+WorkingDirectory=/home/pedro/detector-resistores
+Environment=RESISTOR_DEVICE=0
+Environment=RESISTOR_API_HOST=0.0.0.0
+Environment=RESISTOR_API_PORT=8091
+Environment=RESISTOR_DETECTOR_CONF=0.18
+Environment=RESISTOR_DETECTOR_IOU=0.25
+Environment=RESISTOR_SEGMENTER_CONF=0.05
+ExecStart=/home/pedro/detector-resistores/.venv/bin/python /home/pedro/detector-resistores/server/web_api.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=default.target

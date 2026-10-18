@@ -1,0 +1,15 @@
+tunnel: 7d124829-1af8-4928-b1f0-3b3220a1834c
+credentials-file: /etc/cloudflared/7d124829-1af8-4928-b1f0-3b3220a1834c.json
+
+ingress:
+  - hostname: pogeu.com
+    service: http://localhost:8086
+  - hostname: www.pogeu.com
+    service: http://localhost:8086
+  - hostname: resistor-lens.pogeu.com
+    service: http://localhost:8086
+  - hostname: ha.pogeu.com
+    service: http://localhost:8123
+  - hostname: monitor.pogeu.com
+    service: http://localhost:8090
+  - service: http_status:404
