@@ -1,29 +1,42 @@
-# Interface web
+# Site Resistor Lens
 
-O projeto possui uma interface web publicada como **Resistor Lens**:
+Aplicação web estática para contar resistores em fotos e estimar o valor de cada componente pelas faixas de cores.
 
-<https://resistor-lens.magichippo3.chatgpt.site>
+## Acesso
 
-O Site está em modo privado por padrão; é necessário entrar com a conta ChatGPT autorizada. A audiência pode ser ampliada depois, se necessário.
+- Site publicado, sem login do ChatGPT: <https://resistor-lens.magichippo3.chatgpt.site>
+- O processamento da imagem acontece no navegador; a aplicação não envia automaticamente a foto para um servidor.
 
-Ela permite:
+## Uso
 
-- abrir a câmera traseira do celular;
-- capturar uma foto ou enviar uma imagem da galeria;
-- detectar e contar os resistores visíveis;
-- desenhar caixas sobre os componentes;
-- estimar o valor pelas faixas de cores.
+1. Abra o site no celular ou computador.
+2. Toque em **Abrir câmera**, **Enviar imagem** ou arraste uma imagem para a área tracejada.
+3. O arquivo é analisado automaticamente. Também existe o botão **Testar imagem exemplo**.
+4. Confira a contagem, as caixas numeradas e a lista de valores individuais.
 
-## Execução local
+O acesso à câmera depende de HTTPS/localhost e da permissão do navegador. A imagem deve estar em JPG, PNG ou WEBP, com até 20 MB.
 
-O código-fonte do Site fica no checkout privado `site/` e usa apenas HTML, CSS e JavaScript, sem build obrigatório. Para uma prévia local:
+## Implementação
+
+O site é buildless e fica em `site/dist/`. O detector usa JavaScript local para:
+
+- segmentar corpos bege por projeção horizontal/vertical, evitando duplicatas;
+- identificar faixas por HSV/RGB e suavização do perfil central do corpo;
+- decidir a orientação usando a faixa de tolerância dourada/prateada;
+- decodificar códigos de 4 ou 5 faixas e exibir baixa confiança quando não há evidência suficiente.
+
+O arquivo de demonstração `site/dist/assets/Electronic-Axial-Lead-Resistors-Array.png` contém seis resistores. O teste local atual encontrou exatamente seis componentes e leu: 47 kΩ, 2,2 kΩ, 200 Ω, 1,5 kΩ, 47 Ω e 29 kΩ.
+
+## Executar localmente
+
+Na raiz do repositório:
 
 ```powershell
 python -m http.server 4173 --directory site/dist
 ```
 
-Abra `http://127.0.0.1:4173`. A câmera exige HTTPS ou `localhost`; o upload funciona também em arquivos locais.
+Depois, abra <http://127.0.0.1:4173>. Um servidor HTTP é necessário para que `fetch`, upload e câmera funcionem de forma consistente.
 
-## Limitações atuais
+## Limitações conhecidas
 
-A versão publicada executa a análise localmente no navegador. Em fotos de fita com resistores homogêneos, usa consenso entre as leituras para preservar a contagem quando uma faixa fica encoberta por reflexo ou desfoque; nesses itens a confiança aparece como média. Para produção, o próximo passo é conectar a mesma interface ao detector Python/CNN do repositório por uma API HTTPS.
+Reflexos, baixa resolução, faixas parcialmente ocultas, componentes sobrepostos e resistores muito pequenos podem reduzir a confiança ou exigir uma nova foto. A leitura é uma estimativa visual: confirme valores críticos com multímetro.
