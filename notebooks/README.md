@@ -2,9 +2,12 @@
 
 O objetivo é contar resistores axiais separados em imagens estáticas e estimar
 individualmente as faixas, a resistência e a tolerância. Vídeo e fitas densas
-ficam fora desta implementação. A proposta aprovada está no PDF da raiz.
+ficam fora desta implementação. Leia a [proposta aprovada](../Proposta_Processamento_de_Sinais_2_Deteccao_de_Resistores_Pedro_Bastos.pdf);
+o [LaTeX e suas imagens](../docs/proposta/proposta_resistores.tex) também estão no projeto.
 Os resultados medidos e suas limitações estão em [RESULTADOS.md](RESULTADOS.md).
 Os resumos numéricos estão em [resultados/](resultados/README.md).
+As prioridades para melhorar o trabalho, sem ampliar o escopo, estão em
+[MELHORIAS.md](MELHORIAS.md).
 
 1. `01_dados_e_deteccao.ipynb`: inventário, divisão, pré-processamento,
    treinamento YOLO e avaliação de contagem e localização.

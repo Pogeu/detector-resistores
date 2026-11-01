@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1950" viewBox="0 0 3200 1950" role="img" aria-labelledby="titulo descricao">
+  <title id="titulo">Mapa mental da metodologia de detecção de resistores</title>
+  <desc id="descricao">Seis ramos partem do tema central: dados, pré-processamento, localização, leitura das faixas, validação e resultado. Cada ramo possui caixas próprias para seus elementos. A comparação de cores se desdobra em RGB, HSV e CIELAB.</desc>
+  <style>
+    .title { font: 700 66px Arial, Helvetica, sans-serif; fill: #181818; }
+    .subtitle { font: 400 40px Arial, Helvetica, sans-serif; fill: #575757; }
+    .line { fill: none; stroke: #999; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+    .root { fill: #eeeeec; stroke: #202020; stroke-width: 5; }
+    .major { fill: #fff; stroke: #353535; stroke-width: 4; }
+    .leaf { fill: #fff; stroke: #8c8c8c; stroke-width: 3; }
+    .minor { fill: #f7f7f6; stroke: #8c8c8c; stroke-width: 3; }
+    .root-text { font: 700 48px Arial, Helvetica, sans-serif; fill: #181818; text-anchor: middle; dominant-baseline: middle; }
+    .root-small { font: 400 36px Arial, Helvetica, sans-serif; fill: #303030; text-anchor: middle; dominant-baseline: middle; }
+    .major-text { font: 700 47px Arial, Helvetica, sans-serif; fill: #181818; text-anchor: middle; dominant-baseline: middle; }
+    .leaf-text { font: 400 50px Arial, Helvetica, sans-serif; fill: #181818; text-anchor: middle; dominant-baseline: middle; }
+    .small-text { font: 400 44px Arial, Helvetica, sans-serif; fill: #181818; text-anchor: middle; dominant-baseline: middle; }
+  </style>
+
+  <rect width="3200" height="1950" fill="#fff"/>
+  <text class="title" x="90" y="110">MAPA MENTAL DA METODOLOGIA</text>
+  <text class="subtitle" x="92" y="170">Contagem e identificação de resistores em imagens estáticas</text>
+
+  <!-- As ligações são desenhadas primeiro para ficar atrás das caixas. -->
+  <g class="line">
+    <path d="M1420 965 C1360 965 1360 440 1300 440"/>
+    <path d="M1420 1025 H1300"/>
+    <path d="M1420 1085 C1360 1085 1360 1615 1300 1615"/>
+    <path d="M1780 965 C1840 965 1840 440 1900 440"/>
+    <path d="M1780 1025 H1900"/>
+    <path d="M1780 1085 C1840 1085 1840 1615 1900 1615"/>
+
+    <path d="M900 440 C860 440 860 322 820 322"/>
+    <path d="M900 440 C860 440 860 442 820 442"/>
+    <path d="M900 440 C860 440 860 562 820 562"/>
+    <path d="M900 1025 C860 1025 860 870 820 870"/>
+    <path d="M900 1025 C860 1025 860 990 820 990"/>
+    <path d="M900 1025 C860 1025 860 1110 820 1110"/>
+    <path d="M430 1110 C390 1110 390 1005 350 1005"/>
+    <path d="M430 1110 C390 1110 390 1105 350 1105"/>
+    <path d="M430 1110 C390 1110 390 1205 350 1205"/>
+    <path d="M900 1615 C860 1615 860 1512 820 1512"/>
+    <path d="M900 1615 C860 1615 860 1632 820 1632"/>
+    <path d="M900 1615 C860 1615 860 1752 820 1752"/>
+
+    <path d="M2300 440 C2340 440 2340 322 2380 322"/>
+    <path d="M2300 440 C2340 440 2340 442 2380 442"/>
+    <path d="M2300 440 C2340 440 2340 562 2380 562"/>
+    <path d="M2300 1025 C2340 1025 2340 872 2380 872"/>
+    <path d="M2300 1025 C2340 1025 2340 992 2380 992"/>
+    <path d="M2300 1025 C2340 1025 2340 1112 2380 1112"/>
+    <path d="M2300 1615 C2340 1615 2340 1462 2380 1462"/>
+    <path d="M2300 1615 C2340 1615 2340 1567 2380 1567"/>
+    <path d="M2300 1615 C2340 1615 2340 1672 2380 1672"/>
+    <path d="M2300 1615 C2340 1615 2340 1777 2380 1777"/>
+  </g>
+
+  <rect class="root" x="1400" y="895" width="400" height="270" rx="22"/>
+  <text class="root-text" x="1600" y="963">CONTAGEM E</text>
+  <text class="root-text" x="1600" y="1026">LEITURA DE</text>
+  <text class="root-text" x="1600" y="1089">RESISTORES</text>
+  <text class="root-small" x="1600" y="1135">Imagens estáticas</text>
+
+  <rect class="major" x="900" y="375" width="400" height="130" rx="18"/>
+  <text class="major-text" x="1100" y="440">1. Dados</text>
+  <rect class="major" x="900" y="960" width="400" height="130" rx="18"/>
+  <text class="major-text" x="1100" y="1000">2. Pré-</text>
+  <text class="major-text" x="1100" y="1055">processamento</text>
+  <rect class="major" x="900" y="1550" width="400" height="130" rx="18"/>
+  <text class="major-text" x="1100" y="1615">3. Localização</text>
+
+  <rect class="major" x="1900" y="375" width="400" height="130" rx="18"/>
+  <text class="major-text" x="2100" y="414">4. Leitura das</text>
+  <text class="major-text" x="2100" y="469">faixas</text>
+  <rect class="major" x="1900" y="960" width="400" height="130" rx="18"/>
+  <text class="major-text" x="2100" y="1025">5. Validação</text>
+  <rect class="major" x="1900" y="1550" width="400" height="130" rx="18"/>
+  <text class="major-text" x="2100" y="1615">6. Resultado</text>
+
+  <rect class="leaf" x="80" y="270" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="450" y="322">Roboflow Samu</text>
+  <rect class="leaf" x="80" y="390" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="450" y="442">Fotografias próprias</text>
+  <rect class="leaf" x="80" y="510" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="450" y="562">Resistores separados</text>
+
+  <rect class="leaf" x="430" y="820" width="390" height="100" rx="16"/>
+  <text class="leaf-text" x="625" y="870">Iluminação</text>
+  <rect class="leaf" x="430" y="940" width="390" height="100" rx="16"/>
+  <text class="leaf-text" x="625" y="990">Ruído</text>
+  <rect class="leaf" x="430" y="1060" width="390" height="100" rx="16"/>
+  <text class="small-text" x="625" y="1087">Comparação de</text>
+  <text class="small-text" x="625" y="1135">espaços de cor</text>
+  <rect class="minor" x="80" y="965" width="270" height="80" rx="14"/>
+  <text class="small-text" x="215" y="1005">RGB</text>
+  <rect class="minor" x="80" y="1065" width="270" height="80" rx="14"/>
+  <text class="small-text" x="215" y="1105">HSV</text>
+  <rect class="minor" x="80" y="1165" width="270" height="80" rx="14"/>
+  <text class="small-text" x="215" y="1205">CIELAB</text>
+
+  <rect class="leaf" x="80" y="1460" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="450" y="1512">YOLO</text>
+  <rect class="leaf" x="80" y="1580" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="450" y="1632">Segmentação</text>
+  <rect class="leaf" x="80" y="1700" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="450" y="1752">Morfologia e contornos</text>
+
+  <rect class="leaf" x="2380" y="270" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="2750" y="322">Recorte e alinhamento</text>
+  <rect class="leaf" x="2380" y="390" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="2750" y="442">Ordem das faixas</text>
+  <rect class="leaf" x="2380" y="510" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="2750" y="562">Valor e tolerância</text>
+
+  <rect class="leaf" x="2380" y="820" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="2750" y="872">Contagem</text>
+  <rect class="leaf" x="2380" y="940" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="2750" y="992">Localização</text>
+  <rect class="leaf" x="2380" y="1060" width="740" height="105" rx="16"/>
+  <text class="leaf-text" x="2750" y="1112">Acerto do valor</text>
+
+  <rect class="leaf" x="2380" y="1420" width="740" height="85" rx="16"/>
+  <text class="leaf-text" x="2750" y="1462">Caixas na imagem</text>
+  <rect class="leaf" x="2380" y="1525" width="740" height="85" rx="16"/>
+  <text class="leaf-text" x="2750" y="1567">Contagem total</text>
+  <rect class="leaf" x="2380" y="1630" width="740" height="85" rx="16"/>
+  <text class="leaf-text" x="2750" y="1672">Valor por resistor</text>
+  <rect class="leaf" x="2380" y="1735" width="740" height="85" rx="16"/>
+  <text class="leaf-text" x="2750" y="1777">Aviso de baixa confiança</text>
+</svg>

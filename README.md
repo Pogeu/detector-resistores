@@ -1,6 +1,7 @@
 # Detector de resistores
 
-> **Trabalho conforme a proposta atual:** consulte [os notebooks](notebooks/README.md).
+> **Trabalho conforme a proposta atual:** consulte a [proposta aprovada](Proposta_Processamento_de_Sinais_2_Deteccao_de_Resistores_Pedro_Bastos.pdf),
+> [os notebooks](notebooks/README.md) e a [análise de melhorias](notebooks/MELHORIAS.md).
 > O escopo dessa implementação são imagens estáticas com resistores separados;
 > os scripts e relatórios históricos abaixo permanecem como referência.
 
