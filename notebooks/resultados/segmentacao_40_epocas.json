@@ -1,0 +1,38 @@
+{
+  "imagens_teste": 112,
+  "iou_medio_faixas": 0.5607960151734747,
+  "iou_por_faixa": {
+    "preto": 0.8330031847482298,
+    "azul": 0.0,
+    "marrom": 0.8411497978359442,
+    "dourado": 0.8886889329469778,
+    "verde": 0.815110981874576,
+    "cinza": 0.10891089108910891,
+    "laranja": 0.8565767816138669,
+    "violeta": 0.0,
+    "vermelho": 0.8971154276507184,
+    "prateado": null,
+    "branco": 0.057549278601910184,
+    "amarelo": 0.8706508905468887
+  },
+  "pixels_rotulados_por_faixa": {
+    "preto": 80670,
+    "azul": 0,
+    "marrom": 119727,
+    "dourado": 95182,
+    "verde": 17095,
+    "cinza": 9511,
+    "laranja": 43942,
+    "violeta": 0,
+    "vermelho": 82499,
+    "prateado": 0,
+    "branco": 24569,
+    "amarelo": 38285
+  },
+  "cobertura": 0.9642857142857143,
+  "valor_exato_total": 0.5982142857142857,
+  "valor_exato_emitidos": 0.6203703703703703,
+  "tolerancia_exata_total": 0.8482142857142857,
+  "dentro_tolerancia_total": 0.6339285714285714,
+  "escopo": "recortes anotados; grupos por valor; independência física não verificada"
+}

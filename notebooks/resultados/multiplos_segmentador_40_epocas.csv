@@ -1,0 +1,5 @@
+referencia,detectado,iou,valor_real,valor_previsto,valor_correto,tolerancia_real,tolerancia_prevista,status
+R1,R1,0.8920982313271408,10000,10000.0,True,5,5.0,candidato: revisar
+R2,R2,0.8653846153846154,220,,False,5,,revisar: métodos discordam
+R3,R3,0.875321179493454,1000,,False,5,,revisar: métodos discordam
+R4,R4,0.8148620449802921,220,,False,5,,revisar: métodos discordam

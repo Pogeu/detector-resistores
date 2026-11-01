@@ -1,5 +1,9 @@
 # Detector de resistores
 
+> **Trabalho conforme a proposta atual:** consulte [os notebooks](notebooks/README.md).
+> O escopo dessa implementação são imagens estáticas com resistores separados;
+> os scripts e relatórios históricos abaixo permanecem como referência.
+
 Projeto para contar resistores e estimar seus valores a partir das faixas de cores em imagens e vídeos.
 
 ## Documentação completa

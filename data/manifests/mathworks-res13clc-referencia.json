@@ -1,0 +1,12 @@
+{
+  "id": "mathworks-res13clc",
+  "source_image": "sources/mathworks/extracted/ResistorColorCode/Resistor Images/res13clc.jpg",
+  "image_size": [2689, 3217],
+  "annotation_method": "Faixas e caixas estimadas por inspeção visual da imagem; conferir com as peças ou medição. Não é anotação oficial do dataset.",
+  "objects": [
+    {"id": "R1", "bbox": [1288, 228, 1464, 310], "bands": ["brown", "black", "orange", "gold"], "ohms": 10000, "tolerance_percent": 5},
+    {"id": "R2", "bbox": [1316, 1095, 1499, 1171], "bands": ["red", "red", "brown", "gold"], "ohms": 220, "tolerance_percent": 5},
+    {"id": "R3", "bbox": [812, 2272, 885, 2470], "bands": ["brown", "black", "red", "gold"], "ohms": 1000, "tolerance_percent": 5},
+    {"id": "R4", "bbox": [1684, 2341, 1757, 2543], "bands": ["red", "red", "brown", "gold"], "ohms": 220, "tolerance_percent": 5}
+  ]
+}

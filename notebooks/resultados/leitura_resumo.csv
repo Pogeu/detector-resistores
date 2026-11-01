@@ -1,0 +1,4 @@
+metodo,imagens,cobertura,valor_exato_total,valor_exato_emitidos,dentro_tolerancia_total,tolerancia_exata_total,tempo_medio_ms
+component_analyzer,200.0,0.215,0.0,0.0,0.0,0.04,11.372654759979923
+matlab_compat,200.0,0.08,0.0,0.0,0.0,0.0,144.8266443553439
+perfis_consenso,200.0,0.05,0.0,0.0,0.0,0.0,53.49316694013396

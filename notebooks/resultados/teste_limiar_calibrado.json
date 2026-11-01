@@ -1,0 +1,15 @@
+{
+  "limiar": 0.5,
+  "imagens": 1478,
+  "positivas": 489,
+  "tp": 469,
+  "fp": 4,
+  "fn": 135,
+  "precisao": 0.9915433403805497,
+  "recall": 0.7764900662251656,
+  "f1": 0.8709377901578459,
+  "contagem_exata": 0.9682002706359946,
+  "contagem_exata_positivas": 0.9079754601226994,
+  "erro_absoluto_medio": 0.09133964817320704,
+  "tempo_medio_ms": 7.316667641469453
+}
