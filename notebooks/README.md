@@ -75,6 +75,8 @@ variável e pode receber um peso de detector em `RESISTOR_YOLO_WEIGHTS`.
 Para experimentar o segmentador treinado no notebook 7, aponte
 `RESISTOR_HIRES_WEIGHTS` para `segmentacao-faixas-best.pt` na pasta de saída e
 use `RESISTOR_SEG_SIZE=256` (ou o tamanho usado no treinamento).
+Na pedrogpu, a versão exploratória de 40 épocas está em
+`/home/pedro/resistor-proposta-notebooks/outputs/segmentacao-40ep/segmentacao-faixas-best.pt`.
 Para repetir apenas a avaliação do notebook 7, use
 `RESISTOR_SEG_EVALUATE_WEIGHTS` com o caminho do checkpoint treinado nessa mesma
 divisão, e mantenha `RESISTOR_SEG_SIZE` igual ao usado no treinamento.
